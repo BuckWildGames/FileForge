@@ -1,0 +1,328 @@
+[gd_scene load_steps=10 format=3 uid="uid://ch575hw63vkwa"]
+
+[ext_resource type="Script" path="res://scripts/settings.gd" id="1_sr7is"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekv4g"]
+bg_color = Color(0.18359, 0.18359, 0.18359, 0.392157)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_213gp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j06sa"]
+
+[sub_resource type="Image" id="Image_xtk6d"]
+data = {
+"data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 42, 42, 42, 12, 26, 26, 26, 67, 26, 26, 26, 105, 27, 27, 27, 122, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 27, 27, 27, 122, 26, 26, 26, 105, 27, 27, 27, 66, 46, 46, 46, 11, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 29, 29, 29, 44, 27, 27, 27, 122, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 27, 27, 27, 122, 30, 30, 30, 42, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 29, 29, 29, 44, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 80, 80, 80, 144, 147, 147, 147, 173, 170, 170, 170, 186, 170, 170, 170, 186, 146, 146, 146, 173, 78, 78, 78, 144, 26, 26, 26, 128, 26, 26, 26, 128, 30, 30, 30, 42, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 42, 42, 42, 12, 27, 27, 27, 122, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 117, 117, 117, 159, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 115, 115, 115, 159, 26, 26, 26, 128, 27, 27, 27, 121, 46, 46, 46, 11, 255, 255, 255, 0, 255, 255, 255, 0, 26, 26, 26, 67, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 80, 80, 80, 144, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 179, 179, 179, 191, 76, 76, 76, 143, 26, 26, 26, 128, 27, 27, 27, 65, 255, 255, 255, 0, 255, 255, 255, 0, 26, 26, 26, 105, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 147, 147, 147, 173, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 146, 146, 146, 173, 26, 26, 26, 128, 27, 27, 27, 104, 255, 255, 255, 0, 255, 255, 255, 0, 27, 27, 27, 122, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 170, 170, 170, 186, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 170, 170, 170, 186, 26, 26, 26, 128, 27, 27, 27, 122, 255, 255, 255, 0, 255, 255, 255, 0, 27, 27, 27, 122, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 170, 170, 170, 186, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 170, 170, 170, 185, 26, 26, 26, 128, 27, 27, 27, 121, 255, 255, 255, 0, 255, 255, 255, 0, 26, 26, 26, 105, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 146, 146, 146, 173, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 145, 145, 145, 172, 26, 26, 26, 128, 27, 27, 27, 103, 255, 255, 255, 0, 255, 255, 255, 0, 27, 27, 27, 66, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 78, 78, 78, 144, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 179, 179, 179, 191, 76, 76, 76, 143, 26, 26, 26, 128, 27, 27, 27, 65, 255, 255, 255, 0, 255, 255, 255, 0, 46, 46, 46, 11, 27, 27, 27, 122, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 115, 115, 115, 159, 179, 179, 179, 191, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 180, 180, 180, 192, 179, 179, 179, 191, 115, 115, 115, 158, 26, 26, 26, 128, 27, 27, 27, 121, 51, 51, 51, 10, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 30, 30, 30, 42, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 76, 76, 76, 143, 146, 146, 146, 173, 170, 170, 170, 186, 170, 170, 170, 185, 145, 145, 145, 172, 76, 76, 76, 143, 26, 26, 26, 128, 26, 26, 26, 128, 31, 31, 31, 41, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 30, 30, 30, 42, 27, 27, 27, 121, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 27, 27, 27, 121, 31, 31, 31, 41, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 46, 46, 46, 11, 27, 27, 27, 65, 27, 27, 27, 104, 27, 27, 27, 122, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 26, 26, 26, 128, 27, 27, 27, 121, 27, 27, 27, 103, 27, 27, 27, 65, 51, 51, 51, 10, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0),
+"format": "RGBA8",
+"height": 16,
+"mipmaps": false,
+"width": 32
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_ujscl"]
+image = SubResource("Image_xtk6d")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ib4h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xqkv0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d0agh"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sr7is")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -284.0
+offset_right = 320.0
+offset_bottom = 292.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 64
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="FullScreenButton" type="CheckButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ekv4g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekv4g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_213gp")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j06sa")
+text = "Start Fullscreen"
+
+[node name="AskButton" type="CheckButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ekv4g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekv4g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_213gp")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j06sa")
+button_pressed = true
+text = "Ask On Quit"
+
+[node name="ClickButton" type="CheckButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ekv4g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekv4g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_213gp")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j06sa")
+button_pressed = true
+text = "Click Sound"
+
+[node name="Label2" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Tree Button Behavior"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+tooltip_text = "Sets whether tree buttons will stay in tree or be deleted"
+mouse_filter = 1
+theme_override_font_sizes/font_size = 24
+text = "Delete"
+horizontal_alignment = 1
+
+[node name="DisableButton" type="CheckButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+tooltip_text = "Sets whether tree buttons will stay in tree or be deleted"
+focus_mode = 0
+theme_override_icons/checked = SubResource("ImageTexture_ujscl")
+button_pressed = true
+
+[node name="Label2" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+tooltip_text = "Sets whether tree buttons will stay in tree or be deleted"
+mouse_filter = 1
+theme_override_font_sizes/font_size = 24
+text = "Disable"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(280, 300)
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Root Colour:"
+horizontal_alignment = 1
+
+[node name="RootColour" type="ColorPickerButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(32, 16)
+layout_mode = 2
+focus_mode = 0
+edit_alpha = false
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Branch 1 Colour:"
+horizontal_alignment = 1
+
+[node name="Branch1Colour" type="ColorPickerButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(32, 16)
+layout_mode = 2
+focus_mode = 0
+edit_alpha = false
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Branch 2 Colour:"
+horizontal_alignment = 1
+
+[node name="Branch2Colour" type="ColorPickerButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer3"]
+custom_minimum_size = Vector2(32, 16)
+layout_mode = 2
+focus_mode = 0
+edit_alpha = false
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Branch 3 Colour:"
+horizontal_alignment = 1
+
+[node name="Branch3Colour" type="ColorPickerButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer4"]
+custom_minimum_size = Vector2(32, 16)
+layout_mode = 2
+focus_mode = 0
+edit_alpha = false
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer5"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Branch 4 Colour:"
+horizontal_alignment = 1
+
+[node name="Branch4Colour" type="ColorPickerButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer5"]
+custom_minimum_size = Vector2(32, 16)
+layout_mode = 2
+focus_mode = 0
+edit_alpha = false
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer6"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Branch 5 Colour:"
+horizontal_alignment = 1
+
+[node name="Branch5Colour" type="ColorPickerButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer6"]
+custom_minimum_size = Vector2(32, 16)
+layout_mode = 2
+focus_mode = 0
+edit_alpha = false
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer7"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Variable Colour:"
+horizontal_alignment = 1
+
+[node name="VarColour" type="ColorPickerButton" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer7"]
+custom_minimum_size = Vector2(32, 16)
+layout_mode = 2
+focus_mode = 0
+edit_alpha = false
+
+[node name="DefaultButton" type="Button" parent="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Revert to default colours"
+focus_mode = 0
+theme_override_font_sizes/font_size = 24
+text = "Default"
+flat = true
+
+[node name="HSeparator2" type="HSeparator" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 32
+theme_override_styles/separator = SubResource("StyleBoxEmpty_4ib4h")
+
+[node name="CloseButton" type="Button" parent="CanvasLayer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = "Close"
+
+[node name="DisableButton" type="Button" parent="CanvasLayer"]
+offset_left = 704.0
+offset_top = 656.0
+offset_right = 880.0
+offset_bottom = 680.0
+tooltip_text = "Sets whether tree buttons will stay in tree or be deleted"
+focus_mode = 0
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ekv4g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekv4g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xqkv0")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d0agh")
+toggle_mode = true
+button_pressed = true
+
+[connection signal="toggled" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/FullScreenButton" to="." method="_on_full_screen_button_toggled"]
+[connection signal="toggled" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/AskButton" to="." method="_on_ask_button_toggled"]
+[connection signal="toggled" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/ClickButton" to="." method="_on_click_button_toggled"]
+[connection signal="toggled" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/DisableButton" to="." method="_on_disable_button_toggled"]
+[connection signal="color_changed" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer/RootColour" to="." method="_on_root_colour_color_changed"]
+[connection signal="color_changed" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer2/Branch1Colour" to="." method="_on_branch_1_colour_color_changed"]
+[connection signal="color_changed" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer3/Branch2Colour" to="." method="_on_branch_2_colour_color_changed"]
+[connection signal="color_changed" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer4/Branch3Colour" to="." method="_on_branch_3_colour_color_changed"]
+[connection signal="color_changed" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer5/Branch4Colour" to="." method="_on_branch_4_colour_color_changed"]
+[connection signal="color_changed" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer6/Branch5Colour" to="." method="_on_branch_5_colour_color_changed"]
+[connection signal="color_changed" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer7/VarColour" to="." method="_on_var_colour_color_changed"]
+[connection signal="pressed" from="CanvasLayer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2/DefaultButton" to="." method="_on_default_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/PanelContainer/VBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="toggled" from="CanvasLayer/DisableButton" to="." method="_on_disable_button_toggled"]

@@ -1,0 +1,35 @@
+{
+	"Help": {
+		"1: Intro": [
+			"Welcome to File Forge.",
+			"Create a JSON file for almost anything.",
+			"Designed for game devs to easily create game files.",
+			"Intended to be flexible and fit multiple uses.",
+			"Create files for item lists, dialog trees or just a list of names.",
+			"Saves everything as a Dictionary for easy access.",
+			"Simply load the exported JSON in your program and access the data by name.",
+			"Example: This array would be accessed by calling \"Help[1: Intro]\""
+		],
+		"2: Tips": {
+			"Tip1": "Shift + Click drop down arrows to expand or collapse entire tree.",
+			"Tip2": "Press a letter key to quickly search the tree.",
+			"Tip3": "Press HOME key to recenter window.",
+			"Tip4": "Tree will always be arranged in alphabetical order when loaded.",
+			"Tip5": "To reload tree you can open and close the settings menu."
+		},
+		"3: Example": {
+			"This is a Dictionary": {
+				"This is a Bool": true,
+				"This is a Float": 5.5,
+				"This is a String": "Im a String.",
+				"This is an Array": [
+					"Im a String.",
+					10,
+					5.5,
+					true
+				],
+				"This is an Int": 10
+			}
+		}
+	}
+}
